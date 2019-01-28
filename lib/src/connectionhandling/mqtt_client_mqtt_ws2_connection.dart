@@ -81,6 +81,17 @@ class _DetachedSocket extends Stream<List<int>> implements Socket {
   @override
   bool setOption(SocketOption option, bool enabled) =>
       _socket.setOption(option, enabled);
+
+  @override
+  Uint8List getRawOption(RawSocketOption option) {
+    // TODO: implement getRawOption
+    return null;
+  }
+
+  @override
+  void setRawOption(RawSocketOption option) {
+    // TODO: implement setRawOption
+  }
 }
 
 /// The MQTT secure connection class
